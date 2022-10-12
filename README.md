@@ -10,9 +10,18 @@
 
 ## Code Problems
 
-1. Write a function `absoluteValue` that **returns** the absolute value of a number. If the value is not a number, it returns `null`. Complete this function **without** using Math.abs() .
+1. Write a function named `greaterNum` that:
+  - takes 4 arguments, both numbers.
+  - returns whichever number is the greater (higher) number.
+  - If two arguments are equal, it will return the string "two integers are equal"
+  - If three arguments are equal, it will return the string "three integers are equal"
+  - If all arguments are equal, it will return the string "all integers are equal"
+  - If a given argument is not an integer data type it will return `null`
 ```
-
+greaterNum(10, 7, 30, 60) //returns 60
+greaterNum(1.14, 1.14, 3, 5) //returns "two integers are equal"
+greaterNum(1.14, 1.14, 1.14, 5) //returns "three integers are equal"
+greaterNum("21", 21, "3", 5) //returns null
 ```
 
 2. Write a function named `sumOfNotThreeAndFive` that returns the sum of all numbers that are *not* multiples of 3 and multiples of 5 from 1 to 1000.
